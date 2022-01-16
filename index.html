@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="center-frame" id="start-menu">
+            <h1>Minesweeper</h1>
+            <div>
+                Grid
+                <select id="gridSize">
+                    <option value="10">10x10</option>
+                    <option value="15">15x15</option>
+                    <option value="20">20x20</option>
+                </select> 
+            </div>
+            <div>
+                Level
+                <select id="level">
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
+                </select> 
+            </div>
+            <div class="text-center">
+                <button onclick="play()">Play</button>
+            </div>
+        </div>
+        <div class="center-frame" id="game">            
+            <h1>Minesweeper</h1>
+            <div class="row">
+                <div class="col">
+                    <span>Time: </span> 
+                </div>
+                <div class="col">
+                    <span>Flags:</span><span id="flags"></span>
+                </div>
+            </div>
+            <table id="grid">
+
+            </table>
+            <div>
+                <h3 id="gameStatus"></h3>
+                <div class="row">
+                    <div class="col">
+                        <button onclick="play()">Play again</button>
+                    </div>
+                    <div class="col">
+                        <button onclick="back()">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./main.js"></script>
+</html>
