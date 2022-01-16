@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color: #2c3e50;
+}
+
+body{
+    background: #ecf0f1;
+    position: relative;
+}
+
+.center-frame{
+    position: absolute;  
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 5px rgba(80, 6, 6, 0.1);
+}
+
+h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#gameStatus{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#gameStatus.game-over{
+    color: #e74c3c;
+}
+
+#gmaeStatus.game-win{
+    color: #1abc9c;
+}
+
+select, button{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+select{
+    background: #ecf0f1;
+}
+
+button{
+    background: #1abc9c;
+    color: #ecf0f1;
+}
+
+button:hover{
+    background: #16a085;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    flex: 50%;
+    padding: 10px;
+}
+
+#game{
+    display: none;
+} 
+
+.cell{
+    min-width: 20px;
+    height: 20px;
+    background:#95a5a6 ;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+.cell:hover{
+    background: #7f8c8d;
+}
+
+.cell.revealed{
+    background: #ecf0f1;
+}
+
+.cell.bomb{
+    background: #e74c3c;
+}
+
+.cell.flagged{
+    background: #2ecc71;
+}
